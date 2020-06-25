@@ -1,0 +1,30 @@
+.add_quiz{
+    display: flex;
+    justify-content: flex-end;
+}
+.head_quiz{
+    display: flex;
+    justify-content: space-between;
+}
+.form_make{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.fields{
+    display: flex;
+		flex-direction: column;
+		align-items: center;
+}
+
+.form_make fieldset {
+	border: 0;
+	display: flex;
+	flex-direction: column;
+}
+
+.form_make label {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 20px 0;
+}

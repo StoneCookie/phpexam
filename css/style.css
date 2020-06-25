@@ -1,55 +1,41 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;600&display=swap');
-
-/* Обнуляющие стили */
-*{padding: 0;margin: 0;}
-*,*:before,*:after{box-sizing: border-box;}
-:focus,:active{outline:none;}
-a:focus,a:active{outline: none;}
-html,body{height: 100%;width: 100%;font-family: 'Roboto Slab', serif;font-size: 100%;font-size: 14px;-ms-text-size-adjust: 100%;-moz-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;}
-input,button,textarea{font-family: inherit;}
-input::-ms-clear{display: none;}
-button{cursor: pointer;}
-button::-moz-focus-inner{padding: 0;border: 0;}
-a,a:visited{text-decoration: none;}
-a:hover{text-decoration: none;}
-ul li{list-style: none;}
-
-header {
-	height: 90px;
-	box-shadow: 0 0 15px #6d6d6d;
-	padding: 0 20px;
-	display: grid;
-	grid-template-columns: repeat(3, 1fr);
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
 }
-
-.logo {
-	display: flex;
-	align-items: center;
-	max-width: 200px;
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
-
-.wrap-nav {
-	margin: 0 auto;
-	font-size: 1.2rem;
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 350px;
+    padding: 15px;
+    border: 2px solid gray;
+    box-shadow: 0 0 15px gray;
 }
-
-.nav {
-	display: flex;
-	width: 200px;
-	justify-content: space-between;
-	height: 100%;
+input[type="text"], input[type="password"]{
+    width: 200px;
+    border: 0;
+    border-bottom: 2px solid gray;
+    height: 30px;
 }
-
-.nav__link {
-	border-bottom: 3px solid #1d26a3;
-	height: 100%;
-	padding: 0 15px;
-	transition: .3s;
-	display: flex;
-	align-items: center;
+button{
+    height: 50px;
+    width: 200px;
+    border: 0;
+    background: #575757;
+    color: white;
 }
-
-.nav__link:hover {
-	border-bottom: 3px solid #07a50f;
-	transition: .3s;
+.input-field{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 8vh;
+    justify-content: space-between;
 }
